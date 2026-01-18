@@ -76,6 +76,36 @@ const Navbar = () => {
                                 )}
                             </div>
                         ))}
+
+                        {/* Language Selector */}
+                        <div className="relative group ml-4 pl-4 border-l border-gray-200">
+                            <button className="flex items-center px-3 py-2 text-gray-900 hover:text-sociaal-green font-bold transition-colors">
+                                <span className="mr-1">🌍</span>
+                                <ChevronDown className="w-4 h-4 group-hover:rotate-180 transition-transform duration-200" />
+                            </button>
+                            <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right">
+                                <div className="py-1">
+                                    {[
+                                        { code: 'nl', label: '🇳🇱 Nederlands' },
+                                        { code: 'en', label: '🇬🇧 English' },
+                                        { code: 'ar', label: '🇸🇦 العربية' },
+                                        { code: 'tr', label: '🇹🇷 Türkçe' },
+                                        { code: 'pl', label: '🇵🇱 Polski' },
+                                    ].map((lang) => (
+                                        <button
+                                            key={lang.code}
+                                            onClick={() => {
+                                                document.cookie = `googtrans=/nl/${lang.code}; path=/`;
+                                                window.location.reload();
+                                            }}
+                                            className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-sociaal-green"
+                                        >
+                                            {lang.label}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Mobile menu button */}
