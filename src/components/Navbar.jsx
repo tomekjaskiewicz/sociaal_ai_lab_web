@@ -176,6 +176,33 @@ const Navbar = () => {
                                     )}
                                 </div>
                             ))}
+
+                            {/* Mobile Language Selector */}
+                            <div className="border-t border-gray-100 mt-2 pt-2">
+                                <div className="px-3 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">
+                                    Selecteer Taal
+                                </div>
+                                <div className="grid grid-cols-2 gap-2 px-3">
+                                    {[
+                                        { code: 'nl', label: '🇳🇱 NL' },
+                                        { code: 'en', label: '🇬🇧 EN' },
+                                        { code: 'ar', label: '🇸🇦 AR' },
+                                        { code: 'tr', label: '🇹🇷 TR' },
+                                        { code: 'pl', label: '🇵🇱 PL' },
+                                    ].map((lang) => (
+                                        <button
+                                            key={lang.code}
+                                            onClick={() => {
+                                                document.cookie = `googtrans=/nl/${lang.code}; path=/`;
+                                                window.location.reload();
+                                            }}
+                                            className="flex items-center justify-center px-3 py-2 rounded-md text-sm font-bold text-gray-700 bg-gray-50 hover:bg-green-50 hover:text-sociaal-green border border-gray-200"
+                                        >
+                                            {lang.label}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </motion.div>
                 )}
