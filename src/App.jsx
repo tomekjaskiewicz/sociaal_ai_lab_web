@@ -12,7 +12,7 @@ import ProgramDetail from './pages/ProgramDetail';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <Layout>
         <ScrollToTop />
         <Routes>

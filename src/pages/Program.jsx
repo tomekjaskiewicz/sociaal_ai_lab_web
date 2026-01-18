@@ -1,12 +1,13 @@
 import { Link, useLocation } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import programData from '../content/program.json';
+import { resolvePath } from '../utils/paths';
 
 const ProgramCard = ({ title, description, image, link, color = "bg-white" }) => {
     const CardContent = (
         <div className={`flex flex-col rounded-lg shadow-md overflow-hidden ${color} h-full hover:shadow-xl transition-shadow duration-300`}>
             <div className="h-48 overflow-hidden">
-                <img src={image} alt={title} className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+                <img src={resolvePath(image)} alt={title} className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
             </div>
             <div className="p-6 flex-1 flex flex-col">
                 <h3 className="text-xl font-bold mb-3 text-gray-900">{title}</h3>

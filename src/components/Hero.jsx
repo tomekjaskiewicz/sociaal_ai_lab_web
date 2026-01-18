@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { resolvePath } from '../utils/paths';
 
 const Hero = () => {
     const images = [
-        '/images/banner_website_01.jpg',
-        '/images/banner_website_02.jpg'
+        resolvePath('/images/banner_website_01.jpg'),
+        resolvePath('/images/banner_website_02.jpg')
     ];
 
     const [current, setCurrent] = useState(0);

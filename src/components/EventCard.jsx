@@ -1,4 +1,5 @@
 import { Calendar, MapPin, Target } from 'lucide-react';
+import { resolvePath } from '../utils/paths';
 
 const EventCard = ({ title, date, location, description, image, type = "Evenement" }) => {
     return (
@@ -26,7 +27,7 @@ const EventCard = ({ title, date, location, description, image, type = "Evenemen
             </div>
             <div className="md:w-1/2 relative h-64 md:h-auto">
                 <img
-                    src={image}
+                    src={resolvePath(image)}
                     alt={title}
                     className="absolute inset-0 w-full h-full object-cover"
                 />

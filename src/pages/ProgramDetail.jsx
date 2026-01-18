@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import Markdown from 'react-markdown';
 import { ArrowLeft } from 'lucide-react';
 import programData from '../content/program.json';
+import { resolvePath } from '../utils/paths';
 
 const ProgramDetail = () => {
     const { category, slug } = useParams();
@@ -31,7 +32,7 @@ const ProgramDetail = () => {
             <article className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="h-64 md:h-80 w-full relative">
                     <img
-                        src={item.image}
+                        src={resolvePath(item.image)}
                         alt={item.title}
                         className="absolute inset-0 w-full h-full object-cover"
                     />

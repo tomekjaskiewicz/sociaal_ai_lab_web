@@ -4,6 +4,7 @@ import { ArrowRight, Lightbulb, Users, Hand } from 'lucide-react';
 import fm from 'front-matter';
 import homeData from '../content/home.json';
 import EventCard from '../components/EventCard';
+import { resolvePath } from '../utils/paths';
 
 const Home = () => {
     // Helper to map icon name/index to component if needed, or just use hardcoded logic for icons since CMS can't easily pick React components
@@ -68,7 +69,7 @@ const Home = () => {
                         return (
                             <div key={idx} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
                                 <div className="h-48 flex items-center justify-center bg-gray-50 p-6">
-                                    <img src={item.image} alt={item.title} className="max-h-full object-contain" />
+                                    <img src={resolvePath(item.image)} alt={item.title} className="max-h-full object-contain" />
                                 </div>
                                 <div className="p-6 text-center">
                                     <h3 className="text-xl font-bold mb-3">{item.title}</h3>
