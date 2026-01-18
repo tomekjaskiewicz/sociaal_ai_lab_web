@@ -17,7 +17,7 @@ const Hero = () => {
     }, [images.length]);
 
     return (
-        <div className="relative w-full aspect-[2/1] md:aspect-[21/8] lg:aspect-[3/1] overflow-hidden bg-gray-900">
+        <div className="relative w-full aspect-[2.5/1] md:aspect-[21/8] lg:aspect-[3/1] overflow-hidden bg-gray-900">
             <AnimatePresence>
                 <motion.img
                     key={current}
