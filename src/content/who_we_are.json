@@ -1,0 +1,39 @@
+{
+    "title": "Initiatiefnemers",
+    "partners": [
+        {
+            "name": "Gemeente Rotterdam",
+            "description": "De gemeente Rotterdam is initiatiefnemer binnen het programma Digitale Inclusie. Met het actieplan zet de gemeente zich in om alle inwoners digitaal vaardiger te maken, zodat iedereen veilig en zelfstandig kan meedoen in de digitale samenleving.",
+            "logo": "/images/Gemeente_Rotterdam.png"
+        },
+        {
+            "name": "Hogeschool Rotterdam",
+            "description": "De Hogeschool Rotterdam doet praktijkgericht onderzoek om kennis en innovaties te ontwikkelen met die direct toe te passen is in de praktijk. Onder meer door mensen direct vanaf het begin te betrekken in het ontwerpproces van digitale toepassingen (co-design).",
+            "logo": "/images/Hogeschool_Rotterdam.png"
+        },
+        {
+            "name": "Techniek College Rotterdam",
+            "description": "Het Techniek College Rotterdam betrekt mbo-studenten actief bij het ontwikkelen van praktische AI-toepassingen. Met projecten, workshops en praktijkgericht onderzoek draagt het college bij aan een toekomst waarin technologie begrijpelijk is.",
+            "logo": "/images/Techniek_College_Rotterdam_logo.png"
+        },
+        {
+            "name": "Erasmus Universiteit Rotterdam",
+            "description": "De Erasmus Universiteit onderzoekt hoe mensen en technologie beter kunnen samenwerken. Het Erasmus Centre for Data Analytics (ECDA) is hierin de trekker en verbindt wetenschap, bedrijfsleven en overheid.",
+            "logo": "/images/Erasmus_uni.png"
+        }
+    ],
+    "social_partners_title": "Onze Partners",
+    "social_partners": [
+        "Wijkwijs",
+        "Netwerk Digitale Inclusie",
+        "Bibliotheek",
+        "Trefpunt Vreewijk",
+        "De Buurtouders010",
+        "Equals",
+        "Future Society Lab",
+        "Parai",
+        "Mascotte.ai",
+        "Civic AI Lab Amsterdam"
+    ],
+    "footer_text": "AI voor Rotterdammers door Rotterdammers."
+}

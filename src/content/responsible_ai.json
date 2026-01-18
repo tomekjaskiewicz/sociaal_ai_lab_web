@@ -1,0 +1,37 @@
+{
+    "title": "Maatschappelijke Code voor Verantwoorde AI",
+    "intro": "Het Sociaal AI Lab werkt volgens de **Rotterdamse Maatschappelijke Code voor Verantwoorde AI.** Deze afgesproken regels zorgen ervoor dat technologie in onze stad eerlijk, veilig en mensgericht blijft.",
+    "values": [
+        {
+            "title": "Menselijke waardigheid",
+            "description": "Ondersteunt mensen - vervangt ze niet.",
+            "number": "1"
+        },
+        {
+            "title": "Gelijkheid en inclusie",
+            "description": "Bevordert gelijkheid en toegankelijkheid zonder groepen uit te sluiten.",
+            "number": "2"
+        },
+        {
+            "title": "Transparantie",
+            "description": "Maakt transparant hoe het werkt - zodat iedereen weet hoe en waarom AI wordt ingezet.",
+            "number": "3"
+        },
+        {
+            "title": "Privacy en gegevensbescherming",
+            "description": "Beschermt privacy en gegevens door zorgvuldig om te gaan met persoonlijke informatie.",
+            "number": "4"
+        },
+        {
+            "title": "Veiligheid en betrouwbaarheid",
+            "description": "Werkt veilig en betrouwbaar en doet wat we verwachten, zonder onnodige risico's.",
+            "number": "5"
+        },
+        {
+            "title": "Verantwoording",
+            "description": "Houdt mensen verantwoordelijk - beslissingen blijven altijd in menselijke handen.",
+            "number": "6"
+        }
+    ],
+    "image": "/images/Code_of_Conduct.jpg"
+}

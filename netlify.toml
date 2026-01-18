@@ -1,0 +1,5 @@
+[build]
+  # Since this file is in the root of the repo (sociaalai-modern), we don't need a base directory.
+  # We just publish the 'dist' folder relative to this file.
+  publish = "dist"
+  command = "npm run build"

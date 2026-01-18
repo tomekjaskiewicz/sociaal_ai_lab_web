@@ -1,0 +1,23 @@
+{
+  "hero_title": "Welkom bij het Sociaal AI Lab Rotterdam!",
+  "hero_subtitle": "Samen maken we technologie sociaal.",
+  "intro_text": "In Rotterdam willen we dat iedereen mee kan doen in de digitale samenleving. Daarom is er nu het Sociaal AI Lab Rotterdam: een open plek in de stad waar bewoners, onderzoekers, ontwerpers en beleidsmakers samenwerken aan eerlijke, begrijpelijke en toegankelijke technologie.\n\nRotterdammers ontdekken hier in gesprekken, bijeenkomsten, leer- en doe-activiteiten wat AI betekent voor hun dagelijks leven en denken mee over wat technologie wél of niet moet doen.",
+  "mission_text": "We onderzoeken samen wat kunstmatige intelligentie (AI) betekent voor het dagelijks leven in Rotterdam, en hoe we AI zo kunnen gebruiken dat het bijdraagt aan gelijke kansen voor iedereen.",
+  "pillars": [
+    {
+      "title": "Meedenken",
+      "text": "Rotterdammers krijgen een stem bij het ontwikkelen en beoordelen van AI.",
+      "image": "/images/Meedenken.png"
+    },
+    {
+      "title": "Samen leren",
+      "text": "We vergroten de kennis over kansen en risico's van AI.",
+      "image": "/images/Samen_leren.png"
+    },
+    {
+      "title": "Meedoen",
+      "text": "We ontwikkelen samen oplossingen die passen bij de waarden van de stad.",
+      "image": "/images/Meedoen.png"
+    }
+  ]
+}

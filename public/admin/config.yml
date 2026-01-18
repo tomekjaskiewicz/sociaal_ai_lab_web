@@ -1,0 +1,63 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home Page"
+        file: "src/content/home.json"
+        fields:
+          - {label: "Hero Title", name: "hero_title", widget: "string"}
+          - {label: "Hero Subtitle", name: "hero_subtitle", widget: "string"}
+          - {label: "Intro Text", name: "intro_text", widget: "text"}
+          - {label: "Mission Text", name: "mission_text", widget: "text"}
+          - label: "Pillars"
+            name: "pillars"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Image", name: "image", widget: "image"}
+      - name: "about"
+        label: "About Page"
+        file: "src/content/about.json"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "markdown"}
+      - name: "responsible_ai"
+        label: "Responsible AI Page"
+        file: "src/content/responsible_ai.json"
+        fields:
+           - {label: "Title", name: "title", widget: "string"}
+           - {label: "Core Values", name: "values", widget: "list", fields: [
+              {label: "Title", name: "title", widget: "string"},
+              {label: "Description", name: "description", widget: "text"}
+           ]}
+      - name: "who_we_are"
+        label: "Who We Are Page"
+        file: "src/content/who_we_are.json"
+        fields:
+          - {label: "Partners", name: "partners", widget: "list", fields: [
+              {label: "Name", name: "name", widget: "string"},
+              {label: "Description", name: "description", widget: "text"}
+          ]}
+          
+  - name: "events"
+    label: "Events"
+    folder: "src/content/events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Description", name: "body", widget: "markdown"}
+      - {label: "Image", name: "image", widget: "image"}

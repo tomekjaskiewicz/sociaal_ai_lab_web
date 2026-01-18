@@ -1,0 +1,64 @@
+import { useParams, Link } from 'react-router-dom';
+import Markdown from 'react-markdown';
+import { ArrowLeft } from 'lucide-react';
+import programData from '../content/program.json';
+
+const ProgramDetail = () => {
+    const { category, slug } = useParams();
+
+    // Find the item
+    // Category mapping might be needed if URL category doesn't strictly match JSON keys
+    // In our case we use 'kennis', 'actie', 'faciliteit' in URL which matches JSON keys.
+    const section = programData[category];
+    const item = section?.items.find(i => i.slug === slug);
+
+    if (!item) {
+        return (
+            <div className="max-w-6xl mx-auto px-4 py-20 text-center">
+                <h1 className="text-2xl font-bold text-gray-800 mb-4">Item niet gevonden</h1>
+                <Link to="/" className="text-sociaal-green hover:underline">Terug naar home</Link>
+            </div>
+        );
+    }
+
+    return (
+        <div className="max-w-4xl mx-auto px-4 py-12">
+            <Link to={`/programma/${category}`} className="inline-flex items-center text-gray-800 hover:text-sociaal-green font-bold text-lg mb-8 hover:bg-green-50 px-4 py-2 rounded-lg transition-colors border border-transparent hover:border-sociaal-green/20">
+                <ArrowLeft className="w-5 h-5 mr-2" />
+                Terug naar {section.title}
+            </Link>
+
+            <article className="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div className="h-64 md:h-80 w-full relative">
+                    <img
+                        src={item.image}
+                        alt={item.title}
+                        className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                        <div className="p-8">
+                            <h1 className="text-3xl md:text-5xl font-bold text-white mb-2 shadow-sm">{item.title}</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="p-8 md:p-12">
+                    <div className="prose prose-lg prose-green max-w-none text-gray-800">
+                        <Markdown>{item.content || item.description}</Markdown>
+
+                        {/* Placeholder text as requested */}
+                        <h3>Meer informatie</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    );
+};
+
+export default ProgramDetail;

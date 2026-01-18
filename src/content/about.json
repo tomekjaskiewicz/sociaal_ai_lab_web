@@ -1,0 +1,43 @@
+{
+    "title": "Voor wie is het Sociaal AI Lab?",
+    "main_sections": [
+        {
+            "title": "Onze doelgroep",
+            "items": [
+                "**Rotterdammers** die geraakt worden door digitale ontwikkelingen, maar niet altijd worden betrokken bij besluitvorming.",
+                "**Burgers** die meer over AI willen weten, zoals betrokken denkers en doeners die actief zijn in het sociaal domein en die willen bijdragen aan de digitale toekomst van de stad.",
+                "**Inwoners** die veel werken met AI en hun kennis met andere Rotterdammers willen delen.",
+                "**Experts** die samen met andere Rotterdammers willen ontdekken wat AI voor hen kan betekenen en hoe inwoners AI (willen) gebruiken."
+            ]
+        },
+        {
+            "title": "Wat willen we bereiken?",
+            "text": "Het Sociaal AI Lab Rotterdam versterkt de positie van inwoners in een steeds digitalere samenleving. We doen dat door Rotterdammers actief te betrekken bij het ontwikkelen, begrijpen en beoordelen van AI-toepassingen die invloed hebben op hun leven. Het lab is een ontmoetingsplek waar kennis en praktijk samenkomen. Hier leren we van elkaar, delen we ervaringen en maken we technologie die werkt vóór en mét de stad."
+        },
+        {
+            "title": "Hoe doen we dat?",
+            "text": "Technologie heeft pas echt waarde als die bijdraagt aan een samenleving waarin iedereen mee kan doen. In het Sociaal AI Lab werken we aan een digitale stad die recht doet aan iedereen. We willen dat álle Rotterdammers, juist ook degenen die vaak minder gehoord worden, invloed hebben op hoe technologie wordt gebruikt.\n\nDaarom organiseren we gesprekken, workshops, experimenten en ontwerpsessies waarin inwoners, ontwerpers en onderzoekers samen keuzes maken over hoe AI bijdraagt aan onze stad."
+        }
+    ],
+    "goals_section": {
+        "title": "Onze doelen",
+        "goals": [
+            {
+                "title": "Participatie en inclusie",
+                "description": "Rotterdammers krijgen een stem bij de ontwikkeling van AI."
+            },
+            {
+                "title": "Bewustwording en kennis",
+                "description": "We leren samen wat AI is en wat het kan."
+            },
+            {
+                "title": "Maatschappelijke thema’s",
+                "description": "AI koppelen aan zorg, onderwijs, werk en welzijn."
+            },
+            {
+                "title": "Publieke waarden",
+                "description": "Menselijke waardigheid en privacy staan centraal."
+            }
+        ]
+    }
+}

@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-sociaal-green to-sociaal-light min-h-screen text-gray-800 font-sans;
+  }
+}
