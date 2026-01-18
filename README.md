@@ -1,3 +1,7 @@
+# The WIP website of the Rotterdam Social AI Lab
+to access CMS of the website you need to be collaborator in this repo
+append /admin to the website address in the browser and log in with your github credentials
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
