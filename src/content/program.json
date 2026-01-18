@@ -1,115 +1,122 @@
 {
-    "kennis": {
-        "title": "Kennis & Vaardigheden",
-        "items": [
-            {
-                "title": "AI-vaardigheidstrainingen",
-                "slug": "ai-vaardigheidstrainingen",
-                "description": "Workshops voor inwoners, jongeren en professionals over wat AI is en hoe je het verantwoord kunt gebruiken.",
-                "image": "/images/wat_doen_we/kennis_vaardigheden/Wat_doen_we_ AI-vaardigheidstrainingen.jpg",
-                "content": "# AI-vaardigheidstrainingen\n\nWorkshops voor inwoners, jongeren en professionals over wat AI is en hoe je het verantwoord kunt gebruiken. In deze trainingen leer je de basisprincipes van kunstmatige intelligentie."
-            },
-            {
-                "title": "Ontrafel de AI-Machine",
-                "slug": "ontrafel-de-ai-machine",
-                "description": "Een theatrale en interactieve sessie voor de jeugd, waarin deelnemers kunnen ontdekken hoe AI werkt.",
-                "image": "/images/wat_doen_we/kennis_vaardigheden/Wat_doen_we_ Ontrafel_de _AI_Machine.jpg",
-                "content": "# Ontrafel de AI-Machine\n\nEen theatrale en interactieve sessie voor de jeugd, waarin deelnemers kunnen ontdekken hoe AI werkt. Spelenderwijs duiken we in de wereld van algoritmes."
-            },
-            {
-                "title": "Samen toekomstbeelden creëren",
-                "slug": "samen-toekomstbeelden-creeren",
-                "description": "Interactieve sessie over generatieve AI en toekomstscenario's.",
-                "image": "/images/wat_doen_we/kennis_vaardigheden/Wat_doen_we_ Samen_toekomstbeelden_creëren_met_behulp_van_AI.jpg",
-                "content": "# Samen toekomstbeelden creëren\n\nInteractieve sessie over generatieve AI en toekomstscenario's. Hoe ziet onze wijk eruit in 2030 met AI?"
-            },
-            {
-                "title": "Test je AI-kennis",
-                "slug": "test-je-ai-kennis",
-                "description": "Ontdek hoeveel jij al weet over AI en verdien een badge.",
-                "image": "/images/wat_doen_we/kennis_vaardigheden/Wat_doen_we_ Test_je_AI_kennis.jpg",
-                "content": "# Test je AI-kennis\n\nOntdek hoeveel jij al weet over AI en verdien een badge. Doe mee aan onze quiz en leer bij."
-            },
-            {
-                "title": "AI in het basisonderwijs",
-                "slug": "ai-in-het-basisonderwijs",
-                "description": "Lessen waarin basisschoolleerlingen op een speelse manier kennismaken met AI.",
-                "image": "/images/wat_doen_we/kennis_vaardigheden/Basisschool.jpg",
-                "content": "# AI in het basisonderwijs\n\nLessen waarin basisschoolleerlingen op een speelse manier kennismaken met AI. Want jong geleerd is oud gedaan."
-            },
-            {
-                "title": "Echt of Nep?",
-                "slug": "echt-of-nep",
-                "description": "Workshop over generatieve AI, nieuws, en democratie.",
-                "image": "/images/wat_doen_we/kennis_vaardigheden/Wat_doen_we_ Echt_of_Nep.png",
-                "content": "# Echt of Nep?\n\nWorkshop over generatieve AI, nieuws, en democratie. Hoe herken je deepfakes en desinformatie?"
-            }
-        ]
-    },
-    "actie": {
-        "title": "Actie, Onderzoek & Ontwerp",
-        "items": [
-            {
-                "title": "Digiderius – de digitale Erasmus",
-                "slug": "digiderius",
-                "description": "Praten met een 'digitaal mens' over onderwijs, cultuur en technologie.",
-                "image": "/images/wat_doen_we/actie_onderzoek_ontwerp/Wat_doen_we_ Digiderius.jpg",
-                "content": "# Digiderius – de digitale Erasmus\n\nPraten met een 'digitaal mens' over onderwijs, cultuur en technologie. Een innovatief project in samenwerking met de Erasmus Universiteit."
-            },
-            {
-                "title": "Samen AI-toepassingen ontwerpen",
-                "slug": "samen-ai-ontwerpen",
-                "description": "Samen met bewoners ontwerpen we AI-oplossingen voor sociale vraagstukken.",
-                "image": "/images/wat_doen_we/actie_onderzoek_ontwerp/Wat_doen_we_Samen_AI_toepassingen_ontwerpen.jpg",
-                "content": "# Samen AI-toepassingen ontwerpen\n\nSamen met bewoners ontwerpen we AI-oplossingen voor sociale vraagstukken. Co-creatie staat hierbij centraal."
-            },
-            {
-                "title": "Inclusieve zorg en AI",
-                "slug": "inclusieve-zorg",
-                "description": "Gesprekken over uitsluiting en vooroordelen in de zorg vertalen naar inclusieve AI-principes.",
-                "image": "/images/wat_doen_we/actie_onderzoek_ontwerp/Wat_doen_we_ Inclusieve_AI_in_de_Zorg.jpg",
-                "content": "# Inclusieve zorg en AI\n\nGesprekken over uitsluiting en vooroordelen in de zorg vertalen naar inclusieve AI-principes. Hoe zorgen we dat AI voor iedereen werkt in de zorg?"
-            },
-            {
-                "title": "Ondersteuning verbeteren met AI",
-                "slug": "ondersteuning-verbeteren",
-                "description": "Onderzoeken hoe AI Rotterdammers met weinig digitale ervaring kan ondersteunen.",
-                "image": "/images/wat_doen_we/actie_onderzoek_ontwerp/Wat_doen_we_Ondersteuning_aan_bewoners_verbeteren_ met_AI.jpg",
-                "content": "# Ondersteuning verbeteren met AI\n\nOnderzoeken hoe AI Rotterdammers met weinig digitale ervaring kan ondersteunen. Technologie als hulpmiddel, niet als drempel."
-            },
-            {
-                "title": "Verantwoorde AI (ELSA-aanpak)",
-                "slug": "elsa-aanpak",
-                "description": "Bepalen of AI goed, rechtvaardig en maatschappelijk verantwoord is voor publieke diensten.",
-                "image": "/images/wat_doen_we/actie_onderzoek_ontwerp/Wat_doen_we_Verantwoorde_AI_binnen _Organizaties_(ELSA-aanpak).png",
-                "content": "# Verantwoorde AI (ELSA-aanpak)\n\nBepalen of AI goed, rechtvaardig en maatschappelijk verantwoord is voor publieke diensten. Ethical, Legal and Societal Aspects."
-            },
-            {
-                "title": "Wijkbots",
-                "slug": "wijkbots",
-                "description": "Onderzoeken hoe slimme machines in de toekomst kunnen helpen in openbare ruimtes.",
-                "image": "/images/wat_doen_we/actie_onderzoek_ontwerp/Wat_doen_we_wijkbots.jpg",
-                "content": "# Wijkbots\n\nOnderzoeken hoe slimme machines in de toekomst kunnen helpen in openbare ruimtes. Van vuilnisrobots tot sociale helpers."
-            }
-        ]
-    },
-    "faciliteit": {
-        "title": "Faciliteiten",
-        "items": [
-            {
-                "title": "Het Sociaal AI Lab",
-                "slug": "het-sociaal-ai-lab",
-                "description": "Een fysieke plek op Hillevliet én een online omgeving voor alle activiteiten.",
-                "image": "/images/wat_doen_we/faciliteiten/Wat_doen_we_Sociaal_AI Lab_Rotterdam.png",
-                "content": "# Het Sociaal AI Lab\n\nEen fysieke plek op Hillevliet én een online omgeving voor alle activiteiten. Kom langs voor een kop koffie en een goed gesprek."
-            },
-            {
-                "title": "De mobiele AI Labkar",
-                "slug": "ai-labkar",
-                "description": "Een pop-uplocatie waar bewoners op laagdrempelige wijze kunnen kennismaken met AI.",
-                "image": "/images/wat_doen_we/faciliteiten/Wat_doen_we_AI_Labkar.png",
-                "content": "# De mobiele AI Labkar\n\nEen pop-uplocatie waar bewoners op laagdrempelige wijze kunnen kennismaken met AI. We komen naar je toe!"
-            }
-        ]
-    }
+  "kennis": {
+    "title": "Kennis & Vaardigheden",
+    "items": [
+      {
+        "title": "AI-vaardigheidstrainingen",
+        "slug": "ai-vaardigheidstrainingen",
+        "description": "Workshops voor inwoners, jongeren en professionals over wat AI is en hoe je het verantwoord kunt gebruiken.",
+        "image": "/images/wat_doen_we/kennis_vaardigheden/Wat_doen_we_ AI-vaardigheidstrainingen.jpg",
+        "content": "# AI-vaardigheidstrainingen\n\nWorkshops voor inwoners, jongeren en professionals over wat AI is en hoe je het verantwoord kunt gebruiken. In deze trainingen leer je de basisprincipes van kunstmatige intelligentie."
+      },
+      {
+        "title": "Ontrafel de AI-Machine",
+        "slug": "ontrafel-de-ai-machine",
+        "description": "Een theatrale en interactieve sessie voor de jeugd, waarin deelnemers kunnen ontdekken hoe AI werkt.",
+        "image": "/images/wat_doen_we/kennis_vaardigheden/Wat_doen_we_ Ontrafel_de _AI_Machine.jpg",
+        "content": "# Ontrafel de AI-Machine\n\nEen theatrale en interactieve sessie voor de jeugd, waarin deelnemers kunnen ontdekken hoe AI werkt. Spelenderwijs duiken we in de wereld van algoritmes."
+      },
+      {
+        "title": "Samen toekomstbeelden creëren",
+        "slug": "samen-toekomstbeelden-creeren",
+        "description": "Interactieve sessie over generatieve AI en toekomstscenario's.",
+        "image": "/images/wat_doen_we/kennis_vaardigheden/Wat_doen_we_ Samen_toekomstbeelden_creëren_met_behulp_van_AI.jpg",
+        "content": "# Samen toekomstbeelden creëren\n\nInteractieve sessie over generatieve AI en toekomstscenario's. Hoe ziet onze wijk eruit in 2030 met AI?"
+      },
+      {
+        "title": "Test je AI-kennis",
+        "slug": "test-je-ai-kennis",
+        "description": "Ontdek hoeveel jij al weet over AI en verdien een badge.",
+        "image": "/images/wat_doen_we/kennis_vaardigheden/Wat_doen_we_ Test_je_AI_kennis.jpg",
+        "content": "# Test je AI-kennis\n\nOntdek hoeveel jij al weet over AI en verdien een badge. Doe mee aan onze quiz en leer bij."
+      },
+      {
+        "title": "AI in het basisonderwijs",
+        "slug": "ai-in-het-basisonderwijs",
+        "description": "Lessen waarin basisschoolleerlingen op een speelse manier kennismaken met AI.",
+        "image": "/images/wat_doen_we/kennis_vaardigheden/Basisschool.jpg",
+        "content": "# AI in het basisonderwijs\n\nLessen waarin basisschoolleerlingen op een speelse manier kennismaken met AI. Want jong geleerd is oud gedaan."
+      },
+      {
+        "title": "Echt of Nep?",
+        "slug": "echt-of-nep",
+        "description": "Workshop over generatieve AI, nieuws, en democratie.",
+        "image": "/images/wat_doen_we/kennis_vaardigheden/Wat_doen_we_ Echt_of_Nep.png",
+        "content": "# Echt of Nep?\n\nWorkshop over generatieve AI, nieuws, en democratie. Hoe herken je deepfakes en desinformatie?"
+      },
+      {
+        "title": "test",
+        "slug": "test-test",
+        "description": "blah blah cms test",
+        "image": "/images/uploads/test.webp",
+        "content": "blah blah cms test\n\nblah blah cms test\n\nblah blah cms test\n\n![](/images/uploads/test.webp)"
+      }
+    ]
+  },
+  "actie": {
+    "title": "Actie, Onderzoek & Ontwerp",
+    "items": [
+      {
+        "title": "Digiderius – de digitale Erasmus",
+        "slug": "digiderius",
+        "description": "Praten met een 'digitaal mens' over onderwijs, cultuur en technologie.",
+        "image": "/images/wat_doen_we/actie_onderzoek_ontwerp/Wat_doen_we_ Digiderius.jpg",
+        "content": "# Digiderius – de digitale Erasmus\n\nPraten met een 'digitaal mens' over onderwijs, cultuur en technologie. Een innovatief project in samenwerking met de Erasmus Universiteit."
+      },
+      {
+        "title": "Samen AI-toepassingen ontwerpen",
+        "slug": "samen-ai-ontwerpen",
+        "description": "Samen met bewoners ontwerpen we AI-oplossingen voor sociale vraagstukken.",
+        "image": "/images/wat_doen_we/actie_onderzoek_ontwerp/Wat_doen_we_Samen_AI_toepassingen_ontwerpen.jpg",
+        "content": "# Samen AI-toepassingen ontwerpen\n\nSamen met bewoners ontwerpen we AI-oplossingen voor sociale vraagstukken. Co-creatie staat hierbij centraal."
+      },
+      {
+        "title": "Inclusieve zorg en AI",
+        "slug": "inclusieve-zorg",
+        "description": "Gesprekken over uitsluiting en vooroordelen in de zorg vertalen naar inclusieve AI-principes.",
+        "image": "/images/wat_doen_we/actie_onderzoek_ontwerp/Wat_doen_we_ Inclusieve_AI_in_de_Zorg.jpg",
+        "content": "# Inclusieve zorg en AI\n\nGesprekken over uitsluiting en vooroordelen in de zorg vertalen naar inclusieve AI-principes. Hoe zorgen we dat AI voor iedereen werkt in de zorg?"
+      },
+      {
+        "title": "Ondersteuning verbeteren met AI",
+        "slug": "ondersteuning-verbeteren",
+        "description": "Onderzoeken hoe AI Rotterdammers met weinig digitale ervaring kan ondersteunen.",
+        "image": "/images/wat_doen_we/actie_onderzoek_ontwerp/Wat_doen_we_Ondersteuning_aan_bewoners_verbeteren_ met_AI.jpg",
+        "content": "# Ondersteuning verbeteren met AI\n\nOnderzoeken hoe AI Rotterdammers met weinig digitale ervaring kan ondersteunen. Technologie als hulpmiddel, niet als drempel."
+      },
+      {
+        "title": "Verantwoorde AI (ELSA-aanpak)",
+        "slug": "elsa-aanpak",
+        "description": "Bepalen of AI goed, rechtvaardig en maatschappelijk verantwoord is voor publieke diensten.",
+        "image": "/images/wat_doen_we/actie_onderzoek_ontwerp/Wat_doen_we_Verantwoorde_AI_binnen _Organizaties_(ELSA-aanpak).png",
+        "content": "# Verantwoorde AI (ELSA-aanpak)\n\nBepalen of AI goed, rechtvaardig en maatschappelijk verantwoord is voor publieke diensten. Ethical, Legal and Societal Aspects."
+      },
+      {
+        "title": "Wijkbots",
+        "slug": "wijkbots",
+        "description": "Onderzoeken hoe slimme machines in de toekomst kunnen helpen in openbare ruimtes.",
+        "image": "/images/wat_doen_we/actie_onderzoek_ontwerp/Wat_doen_we_wijkbots.jpg",
+        "content": "# Wijkbots\n\nOnderzoeken hoe slimme machines in de toekomst kunnen helpen in openbare ruimtes. Van vuilnisrobots tot sociale helpers."
+      }
+    ]
+  },
+  "faciliteit": {
+    "title": "Faciliteiten",
+    "items": [
+      {
+        "title": "Het Sociaal AI Lab",
+        "slug": "het-sociaal-ai-lab",
+        "description": "Een fysieke plek op Hillevliet én een online omgeving voor alle activiteiten.",
+        "image": "/images/wat_doen_we/faciliteiten/Wat_doen_we_Sociaal_AI Lab_Rotterdam.png",
+        "content": "# Het Sociaal AI Lab\n\nEen fysieke plek op Hillevliet én een online omgeving voor alle activiteiten. Kom langs voor een kop koffie en een goed gesprek."
+      },
+      {
+        "title": "De mobiele AI Labkar",
+        "slug": "ai-labkar",
+        "description": "Een pop-uplocatie waar bewoners op laagdrempelige wijze kunnen kennismaken met AI.",
+        "image": "/images/wat_doen_we/faciliteiten/Wat_doen_we_AI_Labkar.png",
+        "content": "# De mobiele AI Labkar\n\nEen pop-uplocatie waar bewoners op laagdrempelige wijze kunnen kennismaken met AI. We komen naar je toe!"
+      }
+    ]
+  }
 }
