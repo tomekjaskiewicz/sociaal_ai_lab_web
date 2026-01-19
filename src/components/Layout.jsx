@@ -12,7 +12,6 @@ const Layout = ({ children }) => {
             {isHome && <Hero />}
             <Navbar />
             <main className="flex-grow w-full relative">
-                <div className="absolute inset-0 -z-10 bg-gradient-to-br from-sociaal-green/10 to-sociaal-light/20 blur-3xl opacity-50" />
                 {children}
             </main>
             <Footer />

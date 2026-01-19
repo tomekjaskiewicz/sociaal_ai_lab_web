@@ -6,7 +6,7 @@
 
 body {
   font-family: "Onest", sans-serif;
-  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+  background: linear-gradient(to bottom right, #00811F, #b9eb34);
   /* Hide Google Translate top bar push */
   top: 0 !important;
 }
@@ -15,22 +15,28 @@ body {
 .goog-te-banner-frame.skiptranslate {
   display: none !important;
 }
+
 .goog-te-gadget-icon {
   display: none !important;
 }
+
 #google_translate_element {
   display: none !important;
 }
+
 .goog-tooltip {
   display: none !important;
 }
+
 .goog-tooltip:hover {
   display: none !important;
 }
+
 .goog-text-highlight {
   background-color: transparent !important;
   box-shadow: none !important;
 }
+
 font {
   background-color: transparent !important;
   box-shadow: none !important;

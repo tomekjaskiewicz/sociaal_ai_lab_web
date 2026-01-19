@@ -99,11 +99,11 @@ const Home = () => {
 
             {/* Latest Event Section */}
             {latestEvent && (
-                <section className="py-16 px-4 bg-gray-50">
+                <section className="py-16 px-4">
                     <div className="max-w-6xl mx-auto">
                         <div className="flex justify-between items-end mb-8">
-                            <h2 className="text-3xl font-bold text-gray-900">Binnenkort in de agenda</h2>
-                            <Link to="/agenda" className="text-sociaal-green font-semibold hover:underline flex items-center">
+                            <h2 className="text-3xl font-bold text-white">Binnenkort in de agenda</h2>
+                            <Link to="/agenda" className="text-white font-semibold hover:underline flex items-center">
                                 Bekijk volledige agenda <ArrowRight className="ml-1 w-4 h-4" />
                             </Link>
                         </div>
