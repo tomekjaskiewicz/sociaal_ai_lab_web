@@ -3,3 +3,8 @@
   # We just publish the 'dist' folder relative to this file.
   publish = "dist"
   command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

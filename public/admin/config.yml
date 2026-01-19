@@ -41,7 +41,7 @@ collections:
       - {label: "Datum", name: "date", widget: "datetime"}
       - {label: "Locatie", name: "location", widget: "string"}
       - {label: "Afbeelding", name: "image", widget: "image"}
-      - body: {label: "Beschrijving", name: "body", widget: "markdown"}
+      - {label: "Beschrijving", name: "body", widget: "markdown"}
 
   - name: "program"
     label: "Wat doen we?"

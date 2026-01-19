@@ -119,10 +119,10 @@ const Home = () => {
             )}
 
             {/* Contact CTA */}
-            <section className="py-20 bg-gradient-to-r from-sociaal-green to-sociaal-light">
-                <div className="max-w-4xl mx-auto text-center px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">Heb je vragen of ideeën?</h2>
-                    <Link to="/contact" className="inline-flex items-center bg-white text-sociaal-green font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors shadow-lg text-lg">
+            <section className="py-16 px-4">
+                <div className="max-w-4xl mx-auto text-center bg-white rounded-xl shadow-lg p-12">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Heb je vragen of ideeën?</h2>
+                    <Link to="/contact" className="inline-flex items-center bg-sociaal-green text-white font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-colors shadow-lg text-lg">
                         Neem Contact Op <ArrowRight className="ml-2" />
                     </Link>
                 </div>

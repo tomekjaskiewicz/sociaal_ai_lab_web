@@ -6,7 +6,8 @@
 
 body {
   font-family: "Onest", sans-serif;
-  background: linear-gradient(to bottom right, #00811F, #b9eb34);
+  background: linear-gradient(to bottom right, #1e8c39, #c8ec88) fixed;
+  min-height: 100vh;
   /* Hide Google Translate top bar push */
   top: 0 !important;
 }
