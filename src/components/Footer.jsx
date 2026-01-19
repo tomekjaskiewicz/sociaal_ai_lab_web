@@ -1,3 +1,5 @@
+import { resolvePath } from '../utils/paths';
+
 const Footer = () => {
     const logos = [
         { name: "Techniek College Rotterdam", src: "/images/Techniek_College_Rotterdam_logoOP.png" },
@@ -14,7 +16,7 @@ const Footer = () => {
                     {logos.map((logo) => (
                         <div key={logo.name} className="w-32 h-20 flex items-center justify-center p-2 opacity-80 hover:opacity-100 transition-opacity">
                             <img
-                                src={logo.src}
+                                src={resolvePath(logo.src)}
                                 alt={`Logo ${logo.name}`}
                                 className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
                             />
