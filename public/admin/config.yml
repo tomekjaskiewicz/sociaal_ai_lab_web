@@ -2,7 +2,7 @@ backend:
   name: github
   repo: tomekjaskiewicz/sociaal_ai_lab_web
   branch: main
-  base_url: https://api.netlify.com # Defaults to Netlify's auth proxy
+  base_url: https://sociaalaiwebsite.netlify.app # Points to the site with Netlify Identity
   auth_endpoint: auth
 
 # Local backend for testing (run npx decap-server)
