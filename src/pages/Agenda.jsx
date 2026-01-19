@@ -42,7 +42,7 @@ const Agenda = () => {
                             date={new Date(event.date).toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' })}
                             location={event.location}
                             description={event.description}
-                            image={resolvePath(event.image)}
+                            image={event.image}
                         />
                     ))
                 ) : (

@@ -1,5 +1,6 @@
 import { Mail, MapPin, Clock } from 'lucide-react';
 import contactData from '../content/contact.json';
+import { resolvePath } from '../utils/paths';
 
 const Contact = () => {
     return (
@@ -53,7 +54,7 @@ const Contact = () => {
             </div>
 
             <div className="mt-8 bg-white p-4 rounded-xl shadow-lg text-center">
-                <img src={contactData.image} alt="Locatie foto" className="mx-auto rounded-lg max-h-96 object-cover" />
+                <img src={resolvePath(contactData.image)} alt="Locatie foto" className="mx-auto rounded-lg max-h-96 object-cover" />
             </div>
         </div>
     );
