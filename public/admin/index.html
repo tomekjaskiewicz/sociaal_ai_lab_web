@@ -2,33 +2,26 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Content Manager</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
-  <style>
-    /* Align CMS style with website */
-    body {
-      font-family: "Onest", sans-serif !important;
-    }
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to match the site */
+        body {
+            font-family: 'Onest', sans-serif;
+        }
 
-    /* Customize primary buttons if possible (Netlify CMS uses specific classes, but this is a broad attempt) */
-    :root {
-      --nc-font-family: "Onest", sans-serif;
-    }
-
-    div[class^="AppContainer"] {
-      /* Decap CMS container */
-      font-family: "Onest", sans-serif;
-    }
-  </style>
+        div[class^="ControlPaneContainer"] {
+            max-width: 1000px;
+        }
+    </style>
 </head>
 
 <body>
-  <!-- Include the script that builds the page and powers Decap CMS -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <!-- Include the script that builds the page and powers Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 
 </html>

@@ -9,7 +9,6 @@ const ProgramDetail = () => {
 
     // Find the item
     // Category mapping might be needed if URL category doesn't strictly match JSON keys
-    // In our case we use 'kennis', 'actie', 'faciliteit' in URL which matches JSON keys.
     const section = programData[category];
     const item = section?.items.find(i => i.slug === slug);
 
@@ -46,8 +45,6 @@ const ProgramDetail = () => {
                 <div className="p-8 md:p-12">
                     <div className="prose prose-lg prose-green max-w-none text-gray-800">
                         <Markdown>{item.content || item.description}</Markdown>
-
-                        {/* Placeholder text as requested */}
                     </div>
                 </div>
             </article>

@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
-import EventCard from '../components/EventCard';
 import fm from 'front-matter';
+import EventCard from '../components/EventCard';
+import { resolvePath } from '../utils/paths';
 
 const Agenda = () => {
     const [events, setEvents] = useState([]);
 
     useEffect(() => {
-        const importEvents = async () => {
+        const fetchEvents = async () => {
             const modules = import.meta.glob('../content/events/*.md', { query: '?raw', import: 'default' });
             const eventList = await Promise.all(
                 Object.entries(modules).map(async ([path, loader]) => {
@@ -15,17 +16,17 @@ const Agenda = () => {
                     return {
                         ...attributes,
                         description: body,
-                        // Extract filename as id if needed, or slug
-                        slug: path.split('/').pop().replace('.md', '')
+                        slug: path.split('/').pop().replace('.md', ''),
+                        // Add full path for link comparison if needed, though simple key is usually enough
                     };
                 })
             );
-            // Sort by date descending
+            // Sort by date
             eventList.sort((a, b) => new Date(b.date) - new Date(a.date));
             setEvents(eventList);
         };
 
-        importEvents();
+        fetchEvents();
     }, []);
 
     return (
@@ -41,7 +42,7 @@ const Agenda = () => {
                             date={new Date(event.date).toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' })}
                             location={event.location}
                             description={event.description}
-                            image={event.image}
+                            image={resolvePath(event.image)}
                         />
                     ))
                 ) : (

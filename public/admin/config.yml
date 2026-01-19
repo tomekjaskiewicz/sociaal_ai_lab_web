@@ -1,19 +1,22 @@
 backend:
   name: github
-  repo: tomekjaskiewicz/sociaal_ai_lab_web # <--- REPLACE THIS with your actual GitHub repo (e.g. tomek/sociaalai-modern)
+  repo: tomekjaskiewicz/sociaal_ai_lab_web
   branch: main
-  
-# local_backend: true # Commenting this out for production deployment checking
+  base_url: https://api.netlify.com # Defaults to Netlify's auth proxy
+  auth_endpoint: auth
 
-media_folder: "public/images/uploads"
-public_folder: "/images/uploads"
+# Local backend for testing (run npx decap-server)
+local_backend: true
+
+media_folder: "public/images"
+public_folder: "/images"
 
 collections:
-  - name: "pages"
-    label: "Pagina's"
+  - name: "home"
+    label: "Voorpagina"
     files:
       - name: "home"
-        label: "Voorpagina"
+        label: "Voorpagina Content"
         file: "src/content/home.json"
         fields:
           - {label: "Hero Titel", name: "hero_title", widget: "string"}
@@ -27,8 +30,24 @@ collections:
               - {label: "Titel", name: "title", widget: "string"}
               - {label: "Tekst", name: "text", widget: "text"}
               - {label: "Afbeelding", name: "image", widget: "image"}
+
+  - name: "events"
+    label: "Agenda"
+    folder: "src/content/events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Datum", name: "date", widget: "datetime"}
+      - {label: "Locatie", name: "location", widget: "string"}
+      - {label: "Afbeelding", name: "image", widget: "image"}
+      - body: {label: "Beschrijving", name: "body", widget: "markdown"}
+
+  - name: "program"
+    label: "Wat doen we?"
+    files:
       - name: "program"
-        label: "Wat doen we?"
+        label: "Programma Items"
         file: "src/content/program.json"
         fields:
           - label: "Kennis & Vaardigheden"
@@ -39,11 +58,10 @@ collections:
               - label: "Items"
                 name: "items"
                 widget: "list"
-                collapsed: false
                 fields:
                   - {label: "Titel", name: "title", widget: "string"}
-                  - {label: "Slug (URL naam)", name: "slug", widget: "string"}
-                  - {label: "Korte Beschrijving", name: "description", widget: "text"}
+                  - {label: "Slug", name: "slug", widget: "string"}
+                  - {label: "Beschrijving", name: "description", widget: "text"}
                   - {label: "Afbeelding", name: "image", widget: "image"}
                   - {label: "Inhoud", name: "content", widget: "markdown"}
           - label: "Actie, Onderzoek & Ontwerp"
@@ -54,11 +72,10 @@ collections:
               - label: "Items"
                 name: "items"
                 widget: "list"
-                collapsed: false
                 fields:
                   - {label: "Titel", name: "title", widget: "string"}
-                  - {label: "Slug (URL naam)", name: "slug", widget: "string"}
-                  - {label: "Korte Beschrijving", name: "description", widget: "text"}
+                  - {label: "Slug", name: "slug", widget: "string"}
+                  - {label: "Beschrijving", name: "description", widget: "text"}
                   - {label: "Afbeelding", name: "image", widget: "image"}
                   - {label: "Inhoud", name: "content", widget: "markdown"}
           - label: "Faciliteiten"
@@ -69,45 +86,73 @@ collections:
               - label: "Items"
                 name: "items"
                 widget: "list"
-                collapsed: false
                 fields:
                   - {label: "Titel", name: "title", widget: "string"}
-                  - {label: "Slug (URL naam)", name: "slug", widget: "string"}
-                  - {label: "Korte Beschrijving", name: "description", widget: "text"}
+                  - {label: "Slug", name: "slug", widget: "string"}
+                  - {label: "Beschrijving", name: "description", widget: "text"}
                   - {label: "Afbeelding", name: "image", widget: "image"}
                   - {label: "Inhoud", name: "content", widget: "markdown"}
+
+  - name: "about"
+    label: "Voor wie?"
+    files:
       - name: "about"
-        label: "Voor wie? (Over ons)"
+        label: "Over Ons Content"
         file: "src/content/about.json"
         fields:
           - {label: "Titel", name: "title", widget: "string"}
-          - {label: "Beschrijving", name: "description", widget: "markdown"}
+          - label: "Secties"
+            name: "main_sections"
+            widget: "list"
+            fields:
+              - {label: "Titel", name: "title", widget: "string"}
+              - {label: "Tekst", name: "text", widget: "text", required: false}
+              - {label: "Lijst Items", name: "items", widget: "list", required: false}
+          - label: "Doelen Sectie"
+            name: "goals_section"
+            widget: "object"
+            fields:
+              - {label: "Titel", name: "title", widget: "string"}
+              - label: "Doelen"
+                name: "goals"
+                widget: "list"
+                fields:
+                   - {label: "Titel", name: "title", widget: "string"}
+                   - {label: "Beschrijving", name: "description", widget: "string"}
+
+  - name: "who_we_are"
+    label: "Wie zijn we?"
+    files:
+       - name: "who_we_are"
+         label: "Partners"
+         file: "src/content/who_we_are.json"
+         fields:
+           - {label: "Titel", name: "title", widget: "string"}
+           - label: "Partners"
+             name: "partners"
+             widget: "list"
+             fields:
+               - {label: "Naam", name: "name", widget: "string"}
+               - {label: "Beschrijving", name: "description", widget: "text"}
+               - {label: "Logo", name: "logo", widget: "image", required: false}
+           - {label: "Social Partners Titel", name: "social_partners_title", widget: "string"}
+           - {label: "Social Partners", name: "social_partners", widget: "list"}
+           - {label: "Footer Tekst", name: "footer_text", widget: "string"}
+
+  - name: "responsible_ai"
+    label: "Verantwoorde AI"
+    files:
       - name: "responsible_ai"
-        label: "Verantwoorde AI"
+        label: "Inhoud"
         file: "src/content/responsible_ai.json"
         fields:
-           - {label: "Titel", name: "title", widget: "string"}
-           - {label: "Kernwaarden", name: "values", widget: "list", fields: [
-              {label: "Titel", name: "title", widget: "string"},
-              {label: "Beschrijving", name: "description", widget: "text"}
-           ]}
-      - name: "who_we_are"
-        label: "Wie zijn we?"
-        file: "src/content/who_we_are.json"
-        fields:
-          - {label: "Partners", name: "partners", widget: "list", fields: [
-              {label: "Naam", name: "name", widget: "string"},
-              {label: "Beschrijving", name: "description", widget: "text"}
-          ]}
-          
-  - name: "events"
-    label: "Agenda"
-    folder: "src/content/events"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Titel", name: "title", widget: "string"}
-      - {label: "Datum", name: "date", widget: "datetime"}
-      - {label: "Locatie", name: "location", widget: "string"}
-      - {label: "Beschrijving", name: "body", widget: "markdown", buttons: ["bold", "italic", "code", "link", "heading-one", "heading-two", "quote", "bulleted-list", "numbered-list"]}
-      - {label: "Afbeelding", name: "image", widget: "image"}
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: "Intro", name: "intro", widget: "markdown"}
+          - label: "Waarden"
+            name: "values"
+            widget: "list"
+            fields:
+               - {label: "Nummer", name: "number", widget: "string"}
+               - {label: "Titel", name: "title", widget: "string"}
+               - {label: "Beschrijving", name: "description", widget: "text"}
+          - {label: "Afbeelding", name: "image", widget: "image"}

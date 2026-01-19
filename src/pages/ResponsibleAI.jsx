@@ -1,5 +1,6 @@
 import { Shield, Users, Eye, Lock, Zap, Scale } from 'lucide-react';
 import responsibleData from '../content/responsible_ai.json';
+import { resolvePath } from '../utils/paths';
 
 const ValueCard = ({ icon: Icon, title, description, number }) => (
     <div className="flex flex-col md:flex-row items-center bg-white rounded-xl shadow-lg p-8 gap-6 hover:shadow-xl transition-shadow duration-300">
@@ -46,7 +47,7 @@ const ResponsibleAI = () => {
 
             <div className="mt-16 bg-white p-4 rounded-xl shadow-lg">
                 <img
-                    src={responsibleData.image}
+                    src={resolvePath(responsibleData.image)}
                     alt="Code of Conduct"
                     className="w-full h-auto rounded-lg"
                 />

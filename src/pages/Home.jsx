@@ -7,8 +7,7 @@ import EventCard from '../components/EventCard';
 import { resolvePath } from '../utils/paths';
 
 const Home = () => {
-    // Helper to map icon name/index to component if needed, or just use hardcoded logic for icons since CMS can't easily pick React components
-    // For now, we assume the order of pillars matches the icons: 0=Lightbulb, 1=Users, 2=Hand
+    // Helper to map icon name/index to component if needed
     const icons = [Lightbulb, Users, Hand];
 
     const [latestEvent, setLatestEvent] = useState(null);

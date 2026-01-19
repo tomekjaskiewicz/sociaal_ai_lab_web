@@ -1,4 +1,5 @@
 import whoWeAreData from '../content/who_we_are.json';
+import { resolvePath } from '../utils/paths';
 
 const PartnerCard = ({ name, description, logo, reverse = false }) => (
     <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center bg-white rounded-xl shadow-lg overflow-hidden p-8 gap-8 my-8`}>
@@ -7,7 +8,7 @@ const PartnerCard = ({ name, description, logo, reverse = false }) => (
             <p className="text-gray-700 leading-relaxed">{description}</p>
         </div>
         <div className="flex-1 flex justify-center items-center p-4">
-            {logo && <img src={logo} alt={name} className="max-w-full max-h-48 object-contain" />}
+            {logo && <img src={resolvePath(logo)} alt={name} className="max-w-full max-h-48 object-contain" />}
         </div>
     </div>
 );
