@@ -10,11 +10,22 @@ body {
   min-height: 100vh;
   /* Hide Google Translate top bar push */
   top: 0 !important;
+  position: static !important;
 }
 
 /* Hide Google Translate UI elements */
-.goog-te-banner-frame.skiptranslate {
+.goog-te-banner-frame.skiptranslate,
+.goog-te-banner-frame,
+iframe.goog-te-banner-frame {
   display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+body>.skiptranslate>iframe {
+  display: none !important;
+  visibility: hidden !important;
 }
 
 .goog-te-gadget-icon {
